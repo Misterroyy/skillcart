@@ -16,6 +16,7 @@ export default async function apiHandler(query) {
     },
     data: data,
     params: params,
+    withCredentials: true,
   };
   if(!token||skipToken){
     config.headers.Authorization=""
