@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.special{
+    background: url(assets/simple-blue-white-background-with-text-space.jpg);
+}
