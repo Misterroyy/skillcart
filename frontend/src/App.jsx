@@ -9,7 +9,7 @@ import { lazy } from "react";
 
 const AuthRoutes = lazy(() => import("./pages/AuthRoutes"));
 const HomeRoutes = lazy(() => import("./pages/homeRoutes"));
-const PublicFormRoutes = lazy(() => import("./pages/PublicFormRoutes"));
+ 
 
 function App() {
   // const count = useSelector((state) => state.counter.value);
@@ -25,7 +25,6 @@ function App() {
           <Routes>
             <Route path="" element={<Navigate replace to="/auth" />} />
             <Route path="auth/*" element={<AuthRoutes />} />
-            <Route path="form/*" element={<PublicFormRoutes />} />
             <Route path="home/*" element={<HomeRoutes />} />
             <Route path="404" element={<NotFound />} />
             <Route path="invalid" element={<InvalidPage />} />
